@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffdb59"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:onClick="onClick"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/btn_menuclick"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/main_logo"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="370dp">
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/btnCart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_cartclick"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

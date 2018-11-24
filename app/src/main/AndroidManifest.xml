@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mj">
+
+    <application
+        android:name=".fragment.FragmentApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/mainlogo"
+        android:label="명지한끼"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".main.MainActivity" />
+        <activity android:name=".login.SignUpActivity" />
+        <activity android:name=".login.SearchActivity" />
+        <activity android:name=".main.TabViewActivity" />
+        <activity
+            android:name=".main.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".popUp.PopupActivity_1"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".popUp.PopupActivity_2"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".popUp.PopupActivity_3"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2560">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="200"
+        android:weightSum="1440">
+
+        <TextView
+            android:id="@+id/mainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학생"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- 메인 화면 탭 끝 (weight 200 사용, 2360 남음) -->
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="140"
+        android:weightSum="1440">
+
+        <Button
+            android:id="@+id/btn_first"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="480"
+            android:background="#fff2c5"
+            android:text="학생"/>
+
+        <Button
+            android:id="@+id/btn_second"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="480"
+            android:background="#ffffff"
+            android:text="교직원"/>
+
+        <Button
+            android:id="@+id/btn_third"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="480"
+            android:background="#ffffff"
+            android:text="구매내역"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/line"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="160">
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/btn_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017 / 12 / 18"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:onClick="onClick"
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/btn_right" />
+
+    </LinearLayout>
+
+    <com.example.mj.main.NonSwipeableViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2060">
+    </com.example.mj.main.NonSwipeableViewPager>
+
+
+</LinearLayout>
+
+
+
+
+

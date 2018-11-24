@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MJ</string>
+    <string name="spinner_prompt">성별</string>
+</resources>

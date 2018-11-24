@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2560">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1330"
+        android:background="@drawable/round"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:weightSum="5.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:src="@drawable/search_img1"
+                android:layout_width="55dp"
+                android:layout_height="55dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:text="아이디 찾기"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/SearchName"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:background="@drawable/search_edit"
+                android:hint="이름"
+                android:minWidth="200dp"
+                android:paddingLeft="10dp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15dp" />
+
+            <requestFocus />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/SearchBirth"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:background="@drawable/search_edit"
+                android:hint="생년월일"
+                android:inputType="number"
+                android:minWidth="200dp"
+                android:paddingLeft="10dp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <Button
+                android:text="아이디 찾기"
+                android:id="@+id/SearchIdbtn"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_search" />
+
+        </LinearLayout>
+
+    </LinearLayout> <!-- 세로 5cm 끝 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1230"
+        android:background="@drawable/round"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:weightSum="6.5">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1.5">
+
+            <ImageView
+                android:src="@drawable/search_img2"
+                android:layout_width="55dp"
+                android:layout_height="55dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:text="비밀번호 찾기"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/SearchId"
+                android:hint="아이디"
+                android:paddingLeft="10dp"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:background="@drawable/search_edit"
+                android:textCursorDrawable="@drawable/cursor"
+                android:minWidth="200dp"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/SearchNamePw"
+                android:hint="이름"
+                android:paddingLeft="10dp"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:background="@drawable/search_edit"
+                android:textCursorDrawable="@drawable/cursor"
+                android:minWidth="200dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/SearchBirthPw"
+                android:hint="생년월일"
+                android:paddingLeft="10dp"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:background="@drawable/search_edit"
+                android:textCursorDrawable="@drawable/cursor"
+                android:minWidth="200dp"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1">
+
+            <Button
+                android:text="비밀번호 찾기"
+                android:id="@+id/SearchPwbtn"
+                android:background="@drawable/btn_search"
+                android:layout_width="250dp"
+                android:layout_height="30dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
