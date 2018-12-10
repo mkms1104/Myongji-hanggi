@@ -246,10 +246,10 @@ public class CartFragment extends Fragment implements View.OnClickListener{
 
 
     @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        if(mRootView == null)
-            mRootView = inflater.inflate(R.layout.cart_fragment, container, false);
+        @Override
+        public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+            if(mRootView == null)
+                mRootView = inflater.inflate(R.layout.cart_fragment, container, false);
 
         return mRootView;
     }
